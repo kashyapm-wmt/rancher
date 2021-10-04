@@ -142,5 +142,3 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/scheduler:v1.0.0
           labels: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/scheduler:v1.0.0
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/net:holder
